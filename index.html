@@ -292,6 +292,14 @@
     .btn-primary, .btn-ghost { width:100%; justify-content:center; }
     .hero-actions { gap:10px; }
   }
+  .float-iframe-container { position:fixed; bottom:20px; right:20px; z-index:1000; width:320px; max-width:calc(100vw - 40px); }
+  .float-iframe-header { display:flex; justify-content:space-between; align-items:center; background:var(--navy); padding:8px 12px; border-radius:10px 10px 0 0; }
+  .float-iframe-title { color:white; font-size:.75rem; font-weight:600; }
+  .float-iframe-close { background:none; border:none; color:white; font-size:18px; cursor:pointer; padding:0 4px; line-height:1; }
+  .float-iframe-close:hover { color:var(--red); }
+  .float-iframe-wrapper { border-radius:0 0 10px 10px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,.25); background-color: #fff; }
+  .float-iframe-wrapper iframe { display:block; }
+  @media(max-width:540px){ .float-iframe-container{width:260px;bottom:10px;right:10px;} }
 </style>
 <script type="application/ld+json">
 {
@@ -410,7 +418,15 @@ style="cursor:pointer;background:linear-gradient(135deg,var(--red),#ff5a5e);colo
   </div>
 </section>
 <div class="flag-stripe"></div>
-
+<div class="float-iframe-container" id="floatIframe">
+  <div class="float-iframe-header">
+    <span class="float-iframe-title">Teny Anglisy</span>
+    <button class="float-iframe-close" onclick="document.getElementById('floatIframe').style.display='none'">&times;</button>
+  </div>
+  <div class="float-iframe-wrapper">
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid031zdPQ8L3DGvMixpvjJMSqB7ChVsjzb32XwYBoTaroYquVgAacSvwnujgSMvfKrfVl%26id%3D61581593063960&show_text=true&width=500" width="320" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </div>
+</div>
 <!-- MODULES -->
 <div id="modules" class="tools-bg">
   <div class="sec"><div class="sec-inner">
