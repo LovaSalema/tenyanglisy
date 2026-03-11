@@ -140,6 +140,14 @@
   @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-7px)} }
   @keyframes fadeUp { from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:translateY(0)} }
 
+  /* ─── VIDEO MODAL ─── */
+  .video-modal { display:none; position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,.85); align-items:center; justify-content:center; }
+  .video-modal.active { display:flex; }
+  .video-modal-content { position:relative; width:90%; max-width:800px; aspect-ratio:16/9; background:#000; border-radius:12px; overflow:hidden; box-shadow:0 20px 60px rgba(0,0,0,.5); }
+  .video-modal-content iframe { width:100%; height:100%; border:none; }
+  .video-modal-close { position:absolute; top:-40px; right:0; background:none; border:none; color:white; font-size:28px; cursor:pointer; padding:5px 10px; }
+  .video-modal-close:hover { color:var(--red); }
+
   /* ─── FLAG STRIPE ─── */
   .flag-stripe { height:5px; background:linear-gradient(90deg, var(--navy) 33%, var(--white) 33%, var(--white) 66%, var(--red) 66%); }
 
@@ -354,7 +362,7 @@
   <div class="hero-text">
     <div class="hero-badge">Guide PDF <span class="year"></span> · Méthode IA</div>
     <h1>Maîtrisez l'Anglais<br>avec <em>l'IA</em> </h1>
-   <p class="hero-sub">Apprenez l’anglais en utilisant la technologie moderne — aucun professeur nécessaire. Planifiez votre apprentissage, choisissez les <strong>bons outils</strong>, utilisez les <strong>meilleures ressources</strong> et suivez vos progrès avec des <strong>applications puissantes</strong>.</p>
+   <p class="hero-sub">Apprenez l’anglais en utilisant la technologie moderne — aucun professeur nécessaire. Planifiez votre apprentissage, choisissez les <strong>bons outils</strong>, utilisez les <strong>meilleures ressources,</strong> suivez vos progrès avec des <strong>applications puissantes</strong> et testez votre anglais et obtenez <strong>un certificat gratuit</strong></p>
     <div class="hero-actions">
       <a href="https://tally.so/r/pbL8WP" class="btn-primary" target="_blank">Je veux le Guide PDF</a>
       <a href="#modules" class="btn-ghost">Voir le contenu <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
@@ -389,21 +397,18 @@
     </div> -->
     <div class="float-badge fb1"><strong>B1+</strong>Niveau atteint en 90j</div>
     <div class="float-badge fb2"><strong>45 min</strong>par jour suffit</div>
-    <div class="float-badge fb3">🆓 Outils 100% gratuits</div>
+    <div class="float-badge fb3" onclick="openVideoModal()" 
+style="cursor:pointer;background:linear-gradient(135deg,var(--red),#ff5a5e);color:white;border:none;display:flex;align-items:center;gap:6px;">
+  
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+    <polygon points="5,3 19,12 5,21"/>
+  </svg>
+  
+  <span>Écoutez</span>
+
+</div>
   </div>
 </section>
-<div style="display: flex; justify-content: center; align-items: center; min-height: 100vh;">
-  <iframe 
-    width="560" 
-    height="315"
-    src="https://www.youtube-nocookie.com/embed/Jnzy8_H0_Fk"
-    title="YouTube video player"
-    style="border: none;"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen
-    referrerpolicy="strict-origin-when-cross-origin">
-  </iframe>
-</div>
 <div class="flag-stripe"></div>
 
 <!-- MODULES -->
@@ -478,7 +483,7 @@
   <div class="sec"><div class="sec-inner">
     <div class="sec-label">Ils ont testé la méthode</div>
     <h2 class="sec-title">Ce qu'ils en <em>disent</em></h2>
-    <p class="sec-sub">Des apprenants malgaches qui ont transformé leur niveau d'anglais avec cette méthode.</p>
+    <p class="sec-sub">Des apprenants qui ont transformé leur niveau d'anglais avec cette méthode.</p>
     <div class="proof-grid">
       <div class="proof-card">
         <div class="proof-stars">★★★★★</div>
@@ -493,7 +498,7 @@
       <div class="proof-card">
         <div class="proof-stars">★★★★★</div>
         <p class="proof-text">«L’app de dictée, combinée avec ChatGPT, a transformé ma compréhension orale. Après 30 jours, je comprenais les séries en VO sans sous-titres. »</p>
-        <div class="proof-author"><div class="proof-avatar pa3">TR</div><div><div class="proof-name">Martin G.</div><div class="proof-loc"></div></div></div>
+        <div class="proof-author"><div class="proof-avatar pa3">TR</div><div><div class="proof-name">Yvan</div><div class="proof-loc"></div></div></div>
       </div>
     </div>
   </div></div>
@@ -561,6 +566,28 @@
 </footer>
 
 <script>document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());</script>
+
+<!-- VIDEO MODAL -->
+<div class="video-modal" id="videoModal" onclick="if(event.target===this)closeVideoModal()">
+  <div class="video-modal-content">
+    <button class="video-modal-close" onclick="closeVideoModal()">&times;</button>
+    <iframe id="videoFrame" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </div>
+</div>
+
+<script>
+function openVideoModal() {
+  document.getElementById('videoModal').classList.add('active');
+  document.getElementById('videoFrame').src = 'https://www.youtube-nocookie.com/embed/_EPy3j-nI2E?autoplay=1';
+}
+function closeVideoModal() {
+  document.getElementById('videoModal').classList.remove('active');
+  document.getElementById('videoFrame').src = '';
+}
+document.addEventListener('keydown', function(e) {
+  if(e.key==='Escape') closeVideoModal();
+});
+</script>
 
 </body>
 </html>
