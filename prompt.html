@@ -142,7 +142,7 @@
   .nav-brand span { color: var(--red); }
   .nav-right { display: flex; align-items: center; gap: 24px; }
   .nav-link { font-size: .85rem; color: var(--mid); font-weight: 500; text-decoration: none; transition: color .2s; }
-  .nav-link:hover { color: var(--navy); }
+  .nav-link:hover, .nav-link.active { color: var(--navy); font-weight: 600; }
   .nav-cta {
     background: var(--red); color: white; font-weight: 700; font-size: .82rem;
     padding: 9px 20px; border-radius: 8px; text-decoration: none;
@@ -555,12 +555,11 @@
 <nav role="navigation" aria-label="Navigation principale">
   <a href="https://tenyanglisy.pages.dev" class="nav-logo" aria-label="Accueil Teny Anglisy">
     <img src="logo-ta.png" alt="Teny Anglisy Logo">
-    <!-- <span class="nav-brand">TENY <span>ANGLISY</span></span> -->
   </a>
   <div class="nav-right">
-    <a href="https://tenyanglisy.pages.dev" class="nav-back" aria-label="Retour au site principal">
-      ← Retour au site
-    </a>
+    <a href="https://tenyanglisy.pages.dev" class="nav-link">Accueil</a>
+    <a href="test-guide.html" class="nav-link">Tests</a>
+    <a href="prompt.html" class="nav-link active">Prompts</a>
     <a href="https://tally.so/r/pbL8WP" class="nav-cta" target="_blank" rel="noopener">Guide PDF →</a>
   </div>
 </nav>
@@ -1222,10 +1221,10 @@
   </a>
   <div class="footer-copy">© <span id="yr"></span> Teny Anglisy · Tous droits réservés</div>
   <div class="footer-links">
-    <a href="https://tenyanglisy.pages.dev">Accueil</a>
-    <a href="test-niveau-anglais">Tests</a>
+   <a href="https://tenyanglisy.pages.dev">Accueil</a>
+    <a href="test-guide.html">Tests</a>
+    <a href="prompt.html">Prompts</a>
     <a href="https://tally.so/r/pbL8WP" target="_blank" rel="noopener">Guide PDF</a>
-    <a href="#">Contact</a>
   </div>
 </footer>
 

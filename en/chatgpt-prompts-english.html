@@ -141,7 +141,7 @@
   .nav-brand span { color: var(--red); }
   .nav-right { display: flex; align-items: center; gap: 24px; }
   .nav-link { font-size: .85rem; color: var(--mid); font-weight: 500; text-decoration: none; transition: color .2s; }
-  .nav-link:hover { color: var(--navy); }
+  .nav-link:hover, .nav-link.active { color: var(--navy); font-weight: 600; }
   .nav-cta {
     background: var(--red); color: white; font-weight: 700; font-size: .82rem;
     padding: 9px 20px; border-radius: 8px; text-decoration: none;
@@ -540,9 +540,9 @@
     <img src="../logo-ta.png" alt="Teny Anglisy Logo">
   </a>
   <div class="nav-right">
-    <a href="https://tenyanglisy.pages.dev/en" class="nav-back" aria-label="Back to main site">
-      ← Back to site
-    </a>
+    <a href="https://tenyanglisy.pages.dev/en" class="nav-link">Home</a>
+    <a href="test-english-level.html" class="nav-link">Tests</a>
+    <a href="chatgpt-prompts-english.html" class="nav-link active">Prompts</a>
     <a href="https://tally.so/r/pbL8WP" class="nav-cta" target="_blank" rel="noopener">PDF Guide →</a>
   </div>
 </nav>

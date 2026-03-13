@@ -174,7 +174,7 @@
   .nav-back { font-size: .82rem; color: var(--mid); font-weight: 500; text-decoration: none; display: flex; align-items: center; gap: 5px; transition: color .2s; }
   .nav-back:hover { color: var(--navy); }
   .nav-link { font-size: .82rem; color: var(--mid); font-weight: 500; text-decoration: none; transition: color .2s; }
-  .nav-link:hover { color: var(--navy); }
+  .nav-link:hover, .nav-link.active { color: var(--navy); font-weight: 600; }
   .nav-cta { background: var(--red); color: white; font-weight: 700; font-size: .82rem; padding: 9px 20px; border-radius: 8px; text-decoration: none; transition: all .2s; box-shadow: 0 4px 14px rgba(200,39,45,.28); }
   .nav-cta:hover { background: #a8191e; transform: translateY(-1px); }
 
@@ -566,8 +566,9 @@
     <img src="../logo-ta.png" alt="Teny Anglisy Logo">
   </a>
   <div class="nav-right">
-    <a href="https://tenyanglisy.pages.dev/en" class="nav-back">← Home</a>
-    <a href="https://tenyanglisy.pages.dev/en/chatgpt-prompts-english.html" class="nav-link">50 Prompts</a>
+    <a href="https://tenyanglisy.pages.dev/en" class="nav-link">Home</a>
+    <a href="test-english-level.html" class="nav-link active">Tests</a>
+    <a href="chatgpt-prompts-english.html" class="nav-link">Prompts</a>
     <a href="https://tally.so/r/pbL8WP" class="nav-cta" target="_blank" rel="noopener">PDF Guide →</a>
   </div>
 </nav>
