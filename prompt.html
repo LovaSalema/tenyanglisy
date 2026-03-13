@@ -143,6 +143,8 @@
   .nav-right { display: flex; align-items: center; gap: 24px; }
   .nav-link { font-size: .85rem; color: var(--mid); font-weight: 500; text-decoration: none; transition: color .2s; }
   .nav-link:hover, .nav-link.active { color: var(--navy); font-weight: 600; }
+  .nav-toggle { display: none; }
+  .nav-menu { display: flex; align-items: center; gap: 24px; }
   .nav-cta {
     background: var(--red); color: white; font-weight: 700; font-size: .82rem;
     padding: 9px 20px; border-radius: 8px; text-decoration: none;
@@ -524,6 +526,13 @@
   /* ─── RESPONSIVE ─── */
   @media (max-width: 960px) {
     nav, .breadcrumb { padding: 0 20px; }
+    .nav-right .nav-link { display: none; }
+    .nav-right .nav-cta { display: block; }
+    .nav-toggle { display: flex; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; }
+    .nav-toggle span { width: 22px; height: 2px; background: var(--navy); border-radius: 2px; transition: all .3s; }
+    .nav-menu { position: fixed; top: 68px; left: 0; right: 0; background: white; flex-direction: column; padding: 20px; gap: 0; box-shadow: 0 8px 20px var(--shadow); display: none; }
+    .nav-menu.active { display: flex; }
+    .nav-menu .nav-link { padding: 12px 0; border-bottom: 1px solid var(--light); width: 100%; text-align: left; }
     .hero { padding: 52px 20px 44px; }
     .hero-inner { grid-template-columns: 1fr; }
     .hero-cta-card { display: none; }
@@ -557,10 +566,15 @@
     <img src="logo-ta.png" alt="Teny Anglisy Logo">
   </a>
   <div class="nav-right">
-    <a href="https://tenyanglisy.pages.dev" class="nav-link">Accueil</a>
-    <a href="test-guide.html" class="nav-link">Tests</a>
-    <a href="prompt.html" class="nav-link active">Prompts</a>
-    <a href="https://tally.so/r/pbL8WP" class="nav-cta" target="_blank" rel="noopener">Guide PDF →</a>
+    <div class="nav-toggle" onclick="document.querySelector('.nav-menu').classList.toggle('active')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="nav-menu">
+      <a href="https://tenyanglisy.pages.dev" class="nav-link">Accueil</a>
+      <a href="test-guide.html" class="nav-link">Tests</a>
+      <a href="prompt.html" class="nav-link active">Prompts</a>
+      <a href="https://tally.so/r/pbL8WP" class="nav-cta" target="_blank" rel="noopener">Guide PDF →</a>
+    </div>
   </div>
 </nav>
 
