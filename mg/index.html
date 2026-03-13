@@ -225,7 +225,35 @@
   /* RESPONSIVE */
   @media(max-width:960px){
     nav { padding:0 22px; }
-    .nav-right .nav-link { display:none; }
+    .nav-right .nav-link { display:block; }
+    .nav-toggle {
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  cursor:pointer;
+  padding:8px;
+}
+
+.nav-toggle span {
+  width:22px;
+  height:2px;
+  background:var(--navy);
+  border-radius:2px;
+  transition:all .3s;
+}
+
+/* Transformation en X */
+.nav-toggle.active span:nth-child(1){
+  transform: rotate(45deg) translate(5px,5px);
+}
+
+.nav-toggle.active span:nth-child(2){
+  opacity:0;
+}
+
+.nav-toggle.active span:nth-child(3){
+  transform: rotate(-45deg) translate(5px,-5px);
+}
     .nav-toggle { display:flex; flex-direction:column; gap:5px; cursor:pointer; padding:8px; }
     .nav-toggle span { width:22px; height:2px; background:var(--navy); border-radius:2px; }
     .nav-menu { position:fixed; top:68px; left:0; right:0; background:white; flex-direction:column; padding:20px; gap:0; box-shadow:0 8px 20px var(--shadow); display:none; }
@@ -321,9 +349,13 @@
     <img src="../logo-ta.png" alt="Teny Anglisy logo" width="60" height="auto" style="border-radius:9px;margin:25px;">
   </a>
   <div class="nav-right">
-    <div class="nav-toggle" onclick="document.querySelector('.nav-menu').classList.toggle('active')">
-      <span></span><span></span><span></span>
-    </div>
+    <div class="nav-toggle" 
+onclick="this.classList.toggle('active'); document.querySelector('.nav-menu').classList.toggle('active')" 
+aria-label="Menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
     <div class="nav-menu">
       <a href="https://tenyanglisy.pages.dev" class="nav-link">Fandraisana</a>
     <a href="https://tenyanglisy.pages.dev/test-guide.html" class="nav-link">Fitsapana</a>
