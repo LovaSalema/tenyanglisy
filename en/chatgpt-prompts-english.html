@@ -233,6 +233,13 @@
   .h-stat-num sup { font-size: 1rem; color: #5AABFF; }
   .h-stat-lbl { font-size: .68rem; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,.35); margin-top: 3px; }
 
+   .cta-card { position: relative; z-index: 1; flex-shrink: 0; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.13); border-radius: 16px; padding: 28px 24px; text-align: center; min-width: 220px; }
+  .cta-card .cta-ico { font-size: 2.2rem; margin-bottom: 10px; }
+  .cta-card .cta-price { font-family: 'DM Mono', monospace; font-size: 1.5rem; font-weight: 700; color: white; margin-bottom: 2px; }
+  .cta-card .cta-orig  { font-size: .75rem; color: rgba(255,255,255,.35); text-decoration: line-through; margin-bottom: 14px; }
+  .cta-card a { display: block; background: var(--red); color: white; font-weight: 700; font-size: .9rem; padding: 11px 20px; border-radius: 9px; text-decoration: none; transition: all .2s; box-shadow: 0 4px 16px rgba(200,39,45,.38); }
+  .cta-card a:hover { background: #a8191e; transform: translateY(-1px); }
+  .cta-card .cta-note { font-size: .65rem; color: rgba(255,255,255,.3); margin-top: 10px; }
   .hero-cta-card {
     background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12);
     border-radius: 16px; padding: 28px 24px; width: 240px; flex-shrink: 0;
@@ -446,8 +453,8 @@
   .cta-strip-btn {
     position: relative; z-index: 1; flex-shrink: 0;
     background: var(--red); color: white;
-    font-weight: 800; font-size: .95rem;
-    padding: 16px 28px; border-radius: 12px; text-decoration: none;
+    font-weight: 600; font-size: .95rem;
+    padding: 8px 18px; border-radius: 8px; text-decoration: none;
     transition: all .2s; box-shadow: 0 6px 24px rgba(200,39,45,.38);
     white-space: nowrap; text-align: center;
   }
@@ -1104,13 +1111,20 @@
       <h3>Master English with <em>AI-powered</em> practice</h3>
       <p>Get the <strong>Teny Anglisy PDF Guide</strong> with 90-day program, ChatGPT prompts, NotebookLM strategies, Notion template, and 9 free tools to go from A1 to <strong>B1+ in 90 days</strong>.</p>
     </div>
-    <div style="text-align:center;">
+    <!-- <div style="text-align:center;">
       <img src="../cover.png" alt="Teny Anglisy PDF Guide" style="width:180px;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,0.2);margin-bottom:12px;">
       <br>
       <a href="https://tally.so/r/pbL8WP" class="cta-strip-btn" target="_blank" rel="noopener">
         Get the PDF Guide
         <small>Program · 9 modules</small>
-      </a>
+      </a> -->
+       <div class="cta-card">
+      <img src="../cover.png" alt="Teny Anglisy PDF Guide" style="width:180px;border-radius:8px;margin-bottom:12px;box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+      <div class="cta-price">15 000 Ar</div>
+      <div class="cta-orig">25 000 Ar</div>
+      <a href="https://tally.so/r/pbL8WP" target="_blank" rel="noopener">Get the PDF Guide →</a>
+      <div class="cta-note"><i class="fa-solid fa-lock" style="color: rgba(255,255,255,.3);"></i> Instant access · Secure payment</div>
+    </div>
     </div>
   </aside>
 
@@ -1182,6 +1196,7 @@
   <div class="footer-copy">© <span id="yr"></span> Teny Anglisy · All rights reserved</div>
   <div class="footer-links">
     <a href="https://tenyanglisy.pages.dev/en">Home</a>
+    <a href="test-english-level.html">Tests</a>
     <a href="https://tally.so/r/pbL8WP" target="_blank" rel="noopener">PDF Guide</a>
     <a href="#">Contact</a>
   </div>

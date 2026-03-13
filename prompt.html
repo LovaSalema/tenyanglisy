@@ -237,6 +237,13 @@
   .h-stat-lbl { font-size: .68rem; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,.35); margin-top: 3px; }
 
   /* hero right: floating CTA card */
+   .cta-card { position: relative; z-index: 1; flex-shrink: 0; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.13); border-radius: 16px; padding: 28px 24px; text-align: center; min-width: 220px; }
+  .cta-card .cta-ico { font-size: 2.2rem; margin-bottom: 10px; }
+  .cta-card .cta-price { font-family: 'DM Mono', monospace; font-size: 1.5rem; font-weight: 700; color: white; margin-bottom: 2px; }
+  .cta-card .cta-orig  { font-size: .75rem; color: rgba(255,255,255,.35); text-decoration: line-through; margin-bottom: 14px; }
+  .cta-card a { display: block; background: var(--red); color: white; font-weight: 700; font-size: .9rem; padding: 11px 20px; border-radius: 9px; text-decoration: none; transition: all .2s; box-shadow: 0 4px 16px rgba(200,39,45,.38); }
+  .cta-card a:hover { background: #a8191e; transform: translateY(-1px); }
+  .cta-card .cta-note { font-size: .65rem; color: rgba(255,255,255,.3); margin-top: 10px; }
   .hero-cta-card {
     background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12);
     border-radius: 16px; padding: 28px 24px; width: 240px; flex-shrink: 0;
@@ -459,8 +466,8 @@
   .cta-strip-btn {
     position: relative; z-index: 1; flex-shrink: 0;
     background: var(--red); color: white;
-    font-weight: 800; font-size: .95rem;
-    padding: 16px 28px; border-radius: 12px; text-decoration: none;
+   font-weight: 600; font-size: .95rem;
+    padding: 8px 18px; border-radius: 8px; text-decoration: none;
     transition: all .2s; box-shadow: 0 6px 24px rgba(200,39,45,.38);
     white-space: nowrap; text-align: center;
   }
@@ -1131,13 +1138,20 @@
       <h3>Ces prompts font partie du<br><em>Programme Teny Anglisy</em></h3>
       <p>Le Guide PDF complet inclut un programme de 90 jours structuré, un template Notion, des plans semaine par semaine et 9 outils gratuits expliqués pas à pas pour passer de A1 à B1+ sans professeur.</p>
     </div>
-    <div style="text-align:center;">
+    <!-- <div style="text-align:center;">
       <img src="cover.png" alt="Guide PDF Teny Anglisy" style="width:180px;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,0.2);margin-bottom:12px;">
       <br>
       <a href="https://tally.so/r/pbL8WP" class="cta-strip-btn" target="_blank" rel="noopener">
         Obtenir le Guide PDF
         <small>15 000 Ar · Accès immédiat</small>
       </a>
+    </div> -->
+    <div class="cta-card">
+      <img src="cover.png" alt="Teny Anglisy PDF Guide" style="width:180px;border-radius:8px;margin-bottom:12px;box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+      <div class="cta-price">15 000 Ar</div>
+      <div class="cta-orig">25 000 Ar</div>
+      <a href="https://tally.so/r/pbL8WP" target="_blank" rel="noopener">Obtenir le Guide PDF →</a>
+      <div class="cta-note"><i class="fa-solid fa-lock" style="color: rgba(255,255,255,.3);"></i> 15 000 Ar · Accès immédiat</div>
     </div>
   </aside>
 
@@ -1203,13 +1217,13 @@
 
 <!-- ═══ FOOTER ═══ -->
 <footer role="contentinfo">
-  <a href="https://tenyanglisy.pages.dev" class="footer-logo" aria-label="Retour à l'accueil Teny Anglisy">
+  <a href="https://tenyanglisy.pages.dev" class="footer-logo" aria-label="Accueil Teny Anglisy">
     <img src="logo-ta.png" alt="Teny Anglisy">
-    <!-- <span class="footer-brand">TENY <span>ANGLISY</span></span> -->
   </a>
   <div class="footer-copy">© <span id="yr"></span> Teny Anglisy · Tous droits réservés</div>
   <div class="footer-links">
     <a href="https://tenyanglisy.pages.dev">Accueil</a>
+    <a href="test-niveau-anglais">Tests</a>
     <a href="https://tally.so/r/pbL8WP" target="_blank" rel="noopener">Guide PDF</a>
     <a href="#">Contact</a>
   </div>
