@@ -31,6 +31,8 @@
 <link rel="icon" type="image/png" href="logo-ta.png">
 <link rel="apple-touch-icon" href="logo-ta.png">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V4JSQ5V4XH"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-V4JSQ5V4XH');</script>
@@ -475,7 +477,7 @@
 
   .cta-features { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
   .cta-feat { display: flex; align-items: center; gap: 6px; font-size: .78rem; color: rgba(255,255,255,.55); }
-  .cta-feat::before { content: '✓'; color: #3dba7a; font-weight: 700; font-size: .7rem; }
+  .cta-feat::before { content: none; }
 
   /* ─── FAQ ─── */
   .faq-sec { margin-top: 56px; }
@@ -544,7 +546,7 @@
 <nav role="navigation" aria-label="Navigation principale">
   <a href="https://tenyanglisy.pages.dev" class="nav-logo" aria-label="Accueil Teny Anglisy">
     <img src="logo-ta.png" alt="Logo Teny Anglisy">
-    <span class="nav-brand">TENY <span>ANGLISY</span></span>
+    <!-- <span class="nav-brand">TENY <span>ANGLISY</span></span> -->
   </a>
   <div class="nav-right">
     <a href="https://tenyanglisy.pages.dev" class="nav-back">← Accueil</a>
@@ -576,10 +578,10 @@
       dont un qui vous délivre un <strong>certificat officiel reconnu</strong> dans le monde entier.
     </p>
     <div class="hero-tags">
-      <div class="htag blue">🏛️ Cambridge English</div>
-      <div class="htag red">🎓 EF SET + Certificat gratuit</div>
-      <div class="htag green">📝 Test-English.com</div>
-      <div class="htag gold">⏱️ Résultats instantanés</div>
+      <div class="htag blue"><i class="fa-solid fa-building-columns" style="color: #5AABFF;"></i> Cambridge English</div>
+      <div class="htag red"><i class="fa-solid fa-graduation-cap" style="color: #ff9a9e;"></i> EF SET + Certificat gratuit</div>
+      <div class="htag green"><i class="fa-solid fa-pen-to-square" style="color: #3dba7a;"></i> Test-English.com</div>
+      <div class="htag gold"><i class="fa-solid fa-stopwatch" style="color: #f0c060;"></i> Résultats instantanés</div>
     </div>
     <div class="hero-stats">
       <div class="hstat"><div class="hstat-num">3<sup>+</sup></div><div class="hstat-lbl">Sites Gratuits</div></div>
@@ -596,7 +598,7 @@
 
   <!-- INTRO -->
   <div class="intro-box" role="note">
-    <div class="ico">🗺️</div>
+    <div class="ico"><i class="fa-solid fa-map" style="color: #1A5FA8;"></i></div>
     <div>
       <h2>Pourquoi tester son niveau avant de commencer ?</h2>
       <p>Connaître son niveau exact vous permet de <strong>choisir le bon module</strong> dans le programme Teny Anglisy, d'éviter de perdre du temps sur des notions déjà maîtrisées, et de mesurer vos progrès après 30, 60 et 90 jours. Après votre test, consultez les <a href="https://tally.so/r/pbL8WP" target="_blank" rel="noopener">9 modules du Guide PDF</a> pour savoir exactement où commencer.</p>
@@ -605,7 +607,7 @@
 
   <!-- LEVEL REFERENCE -->
   <section class="level-sec" aria-labelledby="level-heading">
-    <h2 class="level-sec-title" id="level-heading">📊 Les 6 Niveaux du CECRL — De quoi parle-t-on ?</h2>
+    <h2 class="level-sec-title" id="level-heading"><i class="fa-solid fa-chart-simple" style="color: #0D2B4E;"></i> Les 6 Niveaux du CECRL — De quoi parle-t-on ?</h2>
     <div class="level-grid" role="list">
       <div class="level-pill lp-a1" role="listitem"><div class="lp-code">A1</div><div class="lp-name">Débutant</div><div class="lp-desc">Mots de base, présentations simples</div></div>
       <div class="level-pill lp-a2" role="listitem"><div class="lp-code">A2</div><div class="lp-name">Élémentaire</div><div class="lp-desc">Phrases courtes, sujets familiers</div></div>
@@ -619,7 +621,7 @@
   <!-- TEST CARDS -->
   <section aria-labelledby="tests-heading">
     <div class="sec-hdr">
-      <div class="sec-ico" style="background:var(--blue-lt)">🎯</div>
+      <div class="sec-ico" style="background:var(--blue-lt)"><i class="fa-solid fa-bullseye" style="color: #1A5FA8;"></i></div>
       <div>
         <h2 class="sec-title-txt" id="tests-heading">Les 3 Meilleurs Tests Gratuits</h2>
         <p class="sec-sub-txt">Comparaison détaillée — durée, compétences testées, certificat</p>
@@ -631,7 +633,7 @@
       <!-- ══ CAMBRIDGE ══ -->
       <article class="tcard cambridge" aria-labelledby="cambridge-name">
         <div class="tcard-header">
-          <div class="tcard-logo-wrap" aria-hidden="true">🏛️</div>
+          <div class="tcard-logo-wrap" aria-hidden="true"><i class="fa-solid fa-building-columns" style="color: #1B4F8A;"></i></div>
           <div class="tcard-info">
             <div class="tcard-rank">Test n°1 · Prestige mondial</div>
             <h3 class="tcard-name" id="cambridge-name">Cambridge English<br>Test Your English</h3>
@@ -642,7 +644,7 @@
               <div class="score-num">~25</div>
               <div class="score-lbl">minutes</div>
             </div>
-            <div class="no-cert">📄 Sans certificat</div>
+            <div class="no-cert"><i class="fa-solid fa-file" style="color: #5A6A7A;"></i> Sans certificat</div>
           </div>
         </div>
 
@@ -650,12 +652,12 @@
           <div>
             <div class="tcard-block-title">Ce que le test évalue</div>
             <ul class="feat-list">
-              <li><span class="ck yes">✓</span> Grammaire générale</li>
-              <li><span class="ck yes">✓</span> Vocabulaire courant</li>
-              <li><span class="ck yes">✓</span> Compréhension écrite</li>
-              <li><span class="ck yes">✓</span> Niveau A1 à C2 CECRL</li>
-              <li><span class="ck no">–</span> Compréhension orale</li>
-              <li><span class="ck no">–</span> Production écrite</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Grammaire générale</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Vocabulaire courant</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Compréhension écrite</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Niveau A1 à C2 CECRL</li>
+              <li><span class="ck no"><i class="fa-solid fa-minus" style="color: #ccc;"></i></span> Compréhension orale</li>
+              <li><span class="ck no"><i class="fa-solid fa-minus" style="color: #ccc;"></i></span> Production écrite</li>
             </ul>
           </div>
           <div>
@@ -672,11 +674,11 @@
           <div>
             <div class="tcard-block-title">Idéal pour</div>
             <ul class="feat-list">
-              <li><span class="ck yes">✓</span> Diagnostic rapide et fiable</li>
-              <li><span class="ck yes">✓</span> Débutants complets (A1)</li>
-              <li><span class="ck yes">✓</span> Préparer un examen Cambridge</li>
-              <li><span class="ck yes">✓</span> Premier test avant le programme</li>
-              <li><span class="ck yes">✓</span> Connaître son niveau exact</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Diagnostic rapide et fiable</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Débutants complets (A1)</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Préparer un examen Cambridge</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Premier test avant le programme</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Connaître son niveau exact</li>
             </ul>
           </div>
         </div>
@@ -693,9 +695,9 @@
       <!-- ══ EF SET ══ -->
       <article class="tcard efset" aria-labelledby="efset-name">
         <div class="tcard-header">
-          <div class="tcard-logo-wrap" aria-hidden="true">🎓</div>
+          <div class="tcard-logo-wrap" aria-hidden="true"><i class="fa-solid fa-graduation-cap" style="color: #E84B1A;"></i></div>
           <div class="tcard-info">
-            <div class="tcard-rank">Test n°2 · ⭐ Recommandé — Certificat Gratuit</div>
+            <div class="tcard-rank">Test n°2 · <i class="fa-solid fa-star" style="color: #E84B1A;"></i> Recommandé — Certificat Gratuit</div>
             <h3 class="tcard-name" id="efset-name">EF SET<br>English Certificate</h3>
             <p class="tcard-tagline">Le seul test en ligne qui offre un <strong>certificat officiel gratuit</strong> reconnu par plus de 20 000 employeurs. Évalue la compréhension écrite ET orale selon le CECRL.</p>
           </div>
@@ -704,7 +706,7 @@
               <div class="score-num">50</div>
               <div class="score-lbl">minutes</div>
             </div>
-            <div class="cert-badge">🏅 Certificat Gratuit</div>
+            <div class="cert-badge"><i class="fa-solid fa-medal" style="color: #9a6800;"></i> Certificat Gratuit</div>
           </div>
         </div>
 
@@ -712,12 +714,12 @@
           <div>
             <div class="tcard-block-title">Ce que le test évalue</div>
             <ul class="feat-list">
-              <li><span class="ck yes">✓</span> Compréhension écrite</li>
-              <li><span class="ck yes">✓</span> Compréhension orale</li>
-              <li><span class="ck yes">✓</span> Grammaire et vocabulaire</li>
-              <li><span class="ck yes">✓</span> Niveau A1 à C2 CECRL</li>
-              <li><span class="ck yes">✓</span> Score EF SET (0–100)</li>
-              <li><span class="ck yes">✓</span> <strong>Certificat PDF téléchargeable</strong></li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Compréhension écrite</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Compréhension orale</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Grammaire et vocabulaire</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Niveau A1 à C2 CECRL</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Score EF SET (0–100)</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> <strong>Certificat PDF téléchargeable</strong></li>
             </ul>
           </div>
           <div>
@@ -734,11 +736,11 @@
           <div>
             <div class="tcard-block-title">Idéal pour</div>
             <ul class="feat-list">
-              <li><span class="ck yes">✓</span> CV et candidatures emploi</li>
-              <li><span class="ck yes">✓</span> Profil LinkedIn</li>
-              <li><span class="ck yes">✓</span> Dossiers académiques</li>
-              <li><span class="ck yes">✓</span> Preuve de niveau officielle</li>
-              <li><span class="ck yes">✓</span> Avant ET après le programme 90j</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> CV et candidatures emploi</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Profil LinkedIn</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Dossiers académiques</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Preuve de niveau officielle</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Avant ET après le programme 90j</li>
             </ul>
           </div>
         </div>
@@ -755,7 +757,7 @@
       <!-- ══ TEST-ENGLISH ══ -->
       <article class="tcard testen" aria-labelledby="testen-name">
         <div class="tcard-header">
-          <div class="tcard-logo-wrap" aria-hidden="true">📝</div>
+          <div class="tcard-logo-wrap" aria-hidden="true"><i class="fa-solid fa-pen-to-square" style="color: #2A7A50;"></i></div>
           <div class="tcard-info">
             <div class="tcard-rank">Test n°3 · Grammaire Détaillée</div>
             <h3 class="tcard-name" id="testen-name">Test-English.com</h3>
@@ -766,7 +768,7 @@
               <div class="score-num">~15</div>
               <div class="score-lbl">minutes</div>
             </div>
-            <div class="no-cert">📄 Sans certificat</div>
+            <div class="no-cert"><i class="fa-solid fa-file" style="color: #5A6A7A;"></i> Sans certificat</div>
           </div>
         </div>
 
@@ -774,12 +776,12 @@
           <div>
             <div class="tcard-block-title">Ce que le test évalue</div>
             <ul class="feat-list">
-              <li><span class="ck yes">✓</span> Grammaire par niveau (A1–C1)</li>
-              <li><span class="ck yes">✓</span> Tests par temps verbaux</li>
-              <li><span class="ck yes">✓</span> Tests vocabulaire ciblés</li>
-              <li><span class="ck yes">✓</span> Exercises avec corrections</li>
-              <li><span class="ck yes">✓</span> Analyse point par point</li>
-              <li><span class="ck no">–</span> Pas de compréhension orale</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Grammaire par niveau (A1–C1)</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Tests par temps verbaux</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Tests vocabulaire ciblés</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Exercises avec corrections</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Analyse point par point</li>
+              <li><span class="ck no"><i class="fa-solid fa-minus" style="color: #ccc;"></i></span> Pas de compréhension orale</li>
             </ul>
           </div>
           <div>
@@ -796,11 +798,11 @@
           <div>
             <div class="tcard-block-title">Idéal pour</div>
             <ul class="feat-list">
-              <li><span class="ck yes">✓</span> Repérer ses lacunes de grammaire</li>
-              <li><span class="ck yes">✓</span> S'entraîner avant un examen</li>
-              <li><span class="ck yes">✓</span> Suivi semaine par semaine</li>
-              <li><span class="ck yes">✓</span> Complément du Module 1 Teny Anglisy</li>
-              <li><span class="ck yes">✓</span> Tests réguliers en Phase 1 (j1–30)</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Repérer ses lacunes de grammaire</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> S'entraîner avant un examen</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Suivi semaine par semaine</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Complément du Module 1 Teny Anglisy</li>
+              <li><span class="ck yes"><i class="fa-solid fa-check" style="color: var(--green);"></i></span> Tests réguliers en Phase 1 (j1–30)</li>
             </ul>
           </div>
         </div>
@@ -819,15 +821,15 @@
 
   <!-- COMPARISON TABLE -->
   <section class="compare-sec" aria-labelledby="compare-heading">
-    <h2 class="compare-title" id="compare-heading">📊 Tableau Comparatif des 3 Tests</h2>
+    <h2 class="compare-title" id="compare-heading"><i class="fa-solid fa-chart-simple" style="color: #0D2B4E;"></i> Tableau Comparatif des 3 Tests</h2>
     <div style="overflow-x:auto">
       <table class="comp-table" role="table" aria-label="Comparaison des 3 sites de test d'anglais">
         <thead>
           <tr>
             <th scope="col">Critère</th>
-            <th scope="col" class="cambridge-h">🏛️ Cambridge</th>
-            <th scope="col" class="efset-h">🎓 EF SET</th>
-            <th scope="col" class="testen-h">📝 Test-English</th>
+            <th scope="col" class="cambridge-h"><i class="fa-solid fa-building-columns"></i> Cambridge</th>
+            <th scope="col" class="efset-h"><i class="fa-solid fa-graduation-cap"></i> EF SET</th>
+            <th scope="col" class="testen-h"><i class="fa-solid fa-pen-to-square"></i> Test-English</th>
           </tr>
         </thead>
         <tbody>
@@ -845,33 +847,33 @@
           </tr>
           <tr>
             <td>Certificat gratuit</td>
-            <td><span class="no">✗</span></td>
-            <td><span class="badge-sm gold">🏅 Oui — Officiel</span></td>
-            <td><span class="no">✗</span></td>
+            <td><span class="no"><i class="fa-solid fa-xmark"></i></span></td>
+            <td><span class="badge-sm gold"><i class="fa-solid fa-medal"></i> Oui — Officiel</span></td>
+            <td><span class="no"><i class="fa-solid fa-xmark"></i></span></td>
           </tr>
           <tr>
             <td>Compréhension orale</td>
-            <td><span class="no">✗</span></td>
-            <td><span class="yes">✓</span></td>
-            <td><span class="no">✗</span></td>
+            <td><span class="no"><i class="fa-solid fa-xmark"></i></span></td>
+            <td><span class="yes"><i class="fa-solid fa-check"></i></span></td>
+            <td><span class="no"><i class="fa-solid fa-xmark"></i></span></td>
           </tr>
           <tr>
             <td>Grammaire détaillée</td>
             <td><span class="partial">△</span></td>
             <td><span class="partial">△</span></td>
-            <td><span class="yes">✓</span></td>
+            <td><span class="yes"><i class="fa-solid fa-check"></i></span></td>
           </tr>
           <tr>
             <td>Inscription requise</td>
-            <td><span class="no">✗</span> Non</td>
-            <td><span class="yes">✓</span> Oui (gratuit)</td>
-            <td><span class="no">✗</span> Non</td>
+            <td><span class="no"><i class="fa-solid fa-xmark"></i></span> Non</td>
+            <td><span class="yes"><i class="fa-solid fa-check"></i></span> Oui (gratuit)</td>
+            <td><span class="no"><i class="fa-solid fa-xmark"></i></span> Non</td>
           </tr>
           <tr>
             <td>Partage LinkedIn</td>
-            <td><span class="no">✗</span></td>
-            <td><span class="badge-sm green">✓ Oui</span></td>
-            <td><span class="no">✗</span></td>
+            <td><span class="no"><i class="fa-solid fa-xmark"></i></span></td>
+            <td><span class="badge-sm green"><i class="fa-solid fa-check"></i> Oui</span></td>
+            <td><span class="no"><i class="fa-solid fa-xmark"></i></span></td>
           </tr>
           <tr>
             <td>Institution</td>
@@ -882,7 +884,7 @@
           <tr>
             <td>Notre recommandation</td>
             <td>Diagnostic rapide</td>
-            <td><strong style="color:var(--efset)">⭐ Priorité 1</strong></td>
+            <td><strong style="color:var(--efset)"><i class="fa-solid fa-star" style="color: var(--efset);"></i> Priorité 1</strong></td>
             <td>Complément grammaire</td>
           </tr>
         </tbody>
@@ -892,23 +894,23 @@
 
   <!-- HOW-TO STEPS -->
   <section class="howto-sec" aria-labelledby="howto-heading">
-    <h2 class="howto-title" id="howto-heading">🚀 Comment utiliser ces tests avec le Programme Teny Anglisy ?</h2>
+    <h2 class="howto-title" id="howto-heading"><i class="fa-solid fa-rocket" style="color: #0D2B4E;"></i> Comment utiliser ces tests avec le Programme Teny Anglisy ?</h2>
     <div class="steps-grid">
       <div class="step-card">
         <div class="step-num" aria-hidden="true">1</div>
-        <div class="step-ico">🎯</div>
+        <div class="step-ico"><i class="fa-solid fa-bullseye" style="color: #1A5FA8;"></i></div>
         <h3 class="step-title">Étape 1 — Connaître son niveau</h3>
         <p class="step-desc">Commencez par le test <a href="https://www.efset.org/" target="_blank" rel="noopener nofollow">EF SET</a> (50 min) pour obtenir votre niveau CECRL précis <strong>et votre certificat gratuit</strong>. Notez votre score — vous le referez après 90 jours.</p>
       </div>
       <div class="step-card">
         <div class="step-num" aria-hidden="true">2</div>
-        <div class="step-ico">📘</div>
+        <div class="step-ico"><i class="fa-solid fa-book" style="color: #1A5FA8;"></i></div>
         <h3 class="step-title">Étape 2 — Choisir son module</h3>
         <p class="step-desc">Avec votre niveau en main, ouvrez le <a href="https://tally.so/r/pbL8WP" target="_blank" rel="noopener">Guide PDF Teny Anglisy</a>. Le programme 90 jours indique exactement depuis quel module commencer selon votre score A1, A2, B1 ou B2.</p>
       </div>
       <div class="step-card">
         <div class="step-num" aria-hidden="true">3</div>
-        <div class="step-ico">📊</div>
+        <div class="step-ico"><i class="fa-solid fa-chart-simple" style="color: #1A5FA8;"></i></div>
         <h3 class="step-title">Étape 3 — Mesurer sa progression</h3>
         <p class="step-desc">À J+30, utilisez <a href="https://test-english.com/" target="_blank" rel="noopener nofollow">Test-English</a> pour vérifier votre grammaire. À J+90, repassez l'<a href="https://www.efset.org/" target="_blank" rel="noopener nofollow">EF SET complet</a> pour mesurer votre évolution et mettre à jour votre certificat LinkedIn.</p>
       </div>
@@ -923,25 +925,25 @@
       <h3>Vous connaissez votre niveau —<br>maintenant <em>progressez avec un plan</em></h3>
       <p>Le <strong>Guide PDF Teny Anglisy</strong> transforme votre score de test en un programme quotidien de 90 jours. Grammaire, conversation, outils IA, template Notion — tout est inclus pour passer de votre niveau actuel à <strong>B1+ en 90 jours</strong>.</p>
       <div class="cta-features">
-        <div class="cta-feat">Programme 90 jours</div>
-        <div class="cta-feat">9 modules</div>
-        <div class="cta-feat">Prompts ChatGPT</div>
-        <div class="cta-feat">Template Notion</div>
-        <div class="cta-feat">9 outils gratuits</div>
+        <div class="cta-feat"><i class="fa-solid fa-check" style="color: #3dba7a;"></i> Programme 90 jours</div>
+        <div class="cta-feat"><i class="fa-solid fa-check" style="color: #3dba7a;"></i> 9 modules</div>
+        <div class="cta-feat"><i class="fa-solid fa-check" style="color: #3dba7a;"></i> Prompts ChatGPT</div>
+        <div class="cta-feat"><i class="fa-solid fa-check" style="color: #3dba7a;"></i> Template Notion</div>
+        <div class="cta-feat"><i class="fa-solid fa-check" style="color: #3dba7a;"></i> 9 outils gratuits</div>
       </div>
     </div>
     <div class="cta-card">
-      <div class="cta-ico">📘</div>
+      <div class="cta-ico"><i class="fa-solid fa-book" style="color: white;"></i></div>
       <div class="cta-price">15 000 Ar</div>
       <div class="cta-orig">25 000 Ar</div>
       <a href="https://tally.so/r/pbL8WP" target="_blank" rel="noopener">Obtenir le Guide PDF →</a>
-      <div class="cta-note">🔒 Accès immédiat · Paiement sécurisé</div>
+      <div class="cta-note"><i class="fa-solid fa-lock" style="color: rgba(255,255,255,.3);"></i> Accès immédiat · Paiement sécurisé</div>
     </div>
   </aside>
 
   <!-- FAQ -->
   <section class="faq-sec" aria-labelledby="faq-heading">
-    <h2 class="faq-title" id="faq-heading">❓ Questions Fréquentes sur les Tests d'Anglais</h2>
+    <h2 class="faq-title" id="faq-heading"><i class="fa-solid fa-circle-question" style="color: #0D2B4E;"></i> Questions Fréquentes sur les Tests d'Anglais</h2>
     <div class="faq-list" role="list">
 
       <div class="faq-item" role="listitem">
@@ -1001,7 +1003,7 @@
 <footer role="contentinfo">
   <a href="https://tenyanglisy.pages.dev" class="footer-logo" aria-label="Accueil Teny Anglisy">
     <img src="logo-ta.png" alt="Teny Anglisy">
-    <span class="footer-brand">TENY <span>ANGLISY</span></span>
+    <!-- <span class="footer-brand">TENY <span>ANGLISY</span></span> -->
   </a>
   <div class="footer-copy">© <span id="yr"></span> Teny Anglisy · Tous droits réservés</div>
   <div class="footer-links">
