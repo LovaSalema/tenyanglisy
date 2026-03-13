@@ -121,6 +121,11 @@
     overflow-x: hidden;
   }
 
+  /* ─── LANG SWITCHER ─── */
+  .lang-switcher { position:fixed; top:78px; right:16px; z-index:800; display:flex; gap:6px; }
+  .lang-btn { background:white; border:1px solid var(--light); color:var(--mid); font-size:.72rem; font-weight:600; padding:5px 11px; border-radius:20px; text-decoration:none; transition:all .2s; box-shadow:0 2px 8px var(--shadow); }
+  .lang-btn:hover, .lang-btn.active { background:var(--navy); color:white; border-color:var(--navy); }
+
   /* ─── NAVBAR (matches Teny Anglisy) ─── */
   nav {
     position: sticky; top: 0; z-index: 900;
@@ -533,6 +538,12 @@
 </head>
 <body>
 
+<!-- LANGUAGE SWITCHER -->
+<div class="lang-switcher" role="navigation" aria-label="Sélection de langue">
+  <a href="/prompt.html" class="lang-btn active" hreflang="fr" aria-current="page">🇫🇷 FR</a>
+  <a href="/en/chatgpt-prompts-english.html" class="lang-btn" hreflang="en">🇬🇧 EN</a>
+</div>
+
 <!-- ═══ NAVBAR ═══ -->
 <nav role="navigation" aria-label="Navigation principale">
   <a href="https://tenyanglisy.pages.dev" class="nav-logo" aria-label="Accueil Teny Anglisy">
@@ -583,7 +594,7 @@
       </div>
     </div>
     <div class="hero-cta-card" aria-label="Obtenir le guide complet">
-      <div class="ico"><i class="fa-solid fa-book" style="color: #1A5FA8;"></i></div>
+      <img src="cover.png" alt="Guide PDF Teny Anglisy" style="width:100%;border-radius:8px;margin-bottom:12px;box-shadow:0 4px 12px rgba(0,0,0,0.15);">
       <p>Allez plus loin avec le programme complet <strong>90 jours A1 → B1+</strong></p>
       <a href="https://tally.so/r/pbL8WP" target="_blank" rel="noopener">Guide PDF →<br><small>Programme · 9 modules</small></a>
     </div>
@@ -1120,10 +1131,14 @@
       <h3>Ces prompts font partie du<br><em>Programme Teny Anglisy</em></h3>
       <p>Le Guide PDF complet inclut un programme de 90 jours structuré, un template Notion, des plans semaine par semaine et 9 outils gratuits expliqués pas à pas pour passer de A1 à B1+ sans professeur.</p>
     </div>
-    <a href="https://tally.so/r/pbL8WP" class="cta-strip-btn" target="_blank" rel="noopener">
-      Obtenir le Guide PDF
-      <small>15 000 Ar · Accès immédiat</small>
-    </a>
+    <div style="text-align:center;">
+      <img src="cover.png" alt="Guide PDF Teny Anglisy" style="width:180px;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,0.2);margin-bottom:12px;">
+      <br>
+      <a href="https://tally.so/r/pbL8WP" class="cta-strip-btn" target="_blank" rel="noopener">
+        Obtenir le Guide PDF
+        <small>15 000 Ar · Accès immédiat</small>
+      </a>
+    </div>
   </aside>
 
   <!-- ═══ FAQ ═══ -->
