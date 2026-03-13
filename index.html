@@ -3,26 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Teny Anglisy — Apprendre l'Anglais avec l'IA</title>
-<meta name="description" content="Guide PDF complet pour apprendre l'anglais avec l'IA (ChatGPT, NotebookLM, Daily Dictation). Programme de 90 jours du niveau A1 à B1+. 9 modules, outils gratuits.">
-<meta name="keywords" content="apprendre anglais, IA, ChatGPT, anglais avec IA, guide PDF anglais, niveau B1, NotebookLM, Daily Dictation, anglais gratuits, méthode anglais 90 jours">
+<title>Teny Anglisy — Apprendre l'Anglais avec l'IA en 90 jours</title>
+<meta name="description" content="Guide PDF complet pour apprendre l'anglais avec l'IA (ChatGPT, NotebookLM, Daily Dictation). Programme de 90 jours du niveau A1 à B1+. 9 modules, outils gratuits. Téléchargement immédiat.">
+<meta name="keywords" content="apprendre anglais, IA, ChatGPT, anglais avec IA, guide PDF anglais, niveau B1, NotebookLM, Daily Dictation, anglais gratuits, méthode anglais 90 jours, apprendre anglais Madagascar">
 <meta name="author" content="Teny Anglisy">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://tenyanglisy.pages.dev/">
 
+<!-- hreflang multilingue SEO mondial -->
+<link rel="alternate" hreflang="fr" href="https://tenyanglisy.pages.dev/">
+<link rel="alternate" hreflang="en" href="https://tenyanglisy.pages.dev/en/">
+<link rel="alternate" hreflang="mg" href="https://tenyanglisy.pages.dev/mg/">
+<link rel="alternate" hreflang="x-default" href="https://tenyanglisy.pages.dev/en/">
+
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tenyanglisy.pages.dev/">
-<meta property="og:title" content="Teny Anglisy — Apprendre l'Anglais avec l'IA">
+<meta property="og:title" content="Teny Anglisy — Apprendre l'Anglais avec l'IA en 90 jours">
 <meta property="og:description" content="Guide PDF complet pour apprendre l'anglais avec ChatGPT, NotebookLM et 9 outils gratuits. Programme de 90 jours du niveau A1 à B1+.">
-<meta property="og:image" content="preview.png">
+<meta property="og:image" content="https://tenyanglisy.pages.dev/preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="mg_MG">
+<meta property="og:site_name" content="Teny Anglisy">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Teny Anglisy — Apprendre l'Anglais avec l'IA">
 <meta name="twitter:description" content="Guide PDF complet pour apprendre l'anglais avec l'IA. Programme de 90 jours du niveau A1 à B1+.">
-<meta name="twitter:image" content="preview.png">
+<meta name="twitter:image" content="https://tenyanglisy.pages.dev/preview.png">
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-V4JSQ5V4XH"></script>
@@ -30,16 +41,21 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-V4JSQ5V4XH');
 </script>
 
 <!-- Favicon -->
 <link rel="icon" type="image/png" href="logo-ta.png">
 <link rel="apple-touch-icon" href="logo-ta.png">
-<!-- Preconnect -->
+
+<!-- Fonts — FIXED: ajout du link Google Fonts manquant -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
   *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
   :root {
@@ -60,6 +76,11 @@
   }
   html { scroll-behavior: smooth; }
   body { font-family: 'Plus Jakarta Sans', sans-serif; background:var(--white); color:var(--ink); overflow-x:hidden; }
+
+  /* ─── LANG SWITCHER ─── */
+  .lang-switcher { position:fixed; top:78px; right:16px; z-index:800; display:flex; gap:6px; }
+  .lang-btn { background:white; border:1px solid var(--light); color:var(--mid); font-size:.72rem; font-weight:600; padding:5px 11px; border-radius:20px; text-decoration:none; transition:all .2s; box-shadow:0 2px 8px var(--shadow); }
+  .lang-btn:hover, .lang-btn.active { background:var(--navy); color:white; border-color:var(--navy); }
 
   /* ─── NAVBAR ─── */
   nav {
@@ -114,24 +135,8 @@
   .stat-num span { color:var(--red); font-size:1.3rem; }
   .stat-label { font-size:.72rem; color:var(--mid); text-transform:uppercase; letter-spacing:.08em; margin-top:4px; }
 
-  /* ─── BOOK ─── */
+  /* ─── HERO VISUAL ─── */
   .hero-visual { position:relative; z-index:2; display:flex; justify-content:center; align-items:center; animation:fadeUp .7s .15s ease both; }
-  .book-mockup { width:282px; height:382px; background:linear-gradient(145deg, var(--navy) 0%, #091e36 100%); border-radius:3px 14px 14px 3px; box-shadow:-5px 0 0 #060f1c, -11px 6px 22px rgba(0,0,0,.22), 0 24px 60px rgba(13,43,78,.28), inset 3px 0 8px rgba(255,255,255,.04); position:relative; overflow:hidden; transform:perspective(900px) rotateY(-7deg) rotateX(2deg); transition:transform .4s ease; }
-  .book-mockup:hover { transform:perspective(900px) rotateY(-2deg) rotateX(0); }
-  .book-spine { position:absolute; left:0; top:0; bottom:0; width:5px; background:linear-gradient(180deg, var(--red), #7a1216); }
-  .book-content { padding:26px 22px 22px 30px; height:100%; display:flex; flex-direction:column; }
-  .book-logo { width:44px; height:44px; border-radius:7px; overflow:hidden; display:flex; flex-direction:column; margin-bottom:14px; flex-shrink:0; }
-  .book-logo-top { flex:1; background:rgba(255,255,255,.12); display:flex; align-items:center; justify-content:center; }
-  .book-logo-top span { font-family: 'Plus Jakarta Sans', sans-serif; font-size:.7rem; font-weight:900; color:white; }
-  .book-logo-bot { height:7px; background:var(--red); }
-  .book-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size:1.2rem; line-height:1.22; font-weight:700; color:white; margin-bottom:4px; }
-  .book-title span { color:#5AABFF; }
-  .book-subtitle { font-size:.62rem; color:rgba(255,255,255,.38); text-transform:uppercase; letter-spacing:.1em; margin-bottom:16px; }
-  .book-divider { height:2px; background:linear-gradient(90deg, var(--red), transparent); margin-bottom:14px; }
-  .book-modules { list-style:none; flex:1; display:flex; flex-direction:column; gap:6px; }
-  .book-modules li { font-size:.63rem; color:rgba(255,255,255,.42); display:flex; align-items:center; gap:7px; font-family:'Plus Jakarta Sans', sans-serif; }
-  .book-modules li::before { content:''; width:14px; height:1px; background:var(--red); flex-shrink:0; }
-  .book-badge { margin-top:auto; background:var(--red); color:white; font-size:.6rem; font-weight:700; padding:5px 10px; border-radius:4px; text-transform:uppercase; letter-spacing:.08em; display:inline-block; align-self:flex-start; }
   .float-badge { position:absolute; background:white; border:1px solid var(--light); border-radius:12px; padding:10px 16px; font-size:.72rem; color:var(--mid); white-space:nowrap; box-shadow:0 4px 20px var(--shadow); animation:float 3s ease-in-out infinite; }
   .float-badge strong { display:block; font-size:.95rem; color:var(--navy); font-family: 'Plus Jakarta Sans', sans-serif; }
   .fb1 { top:16px; right:-10px; animation-delay:0s; }
@@ -161,12 +166,7 @@
 
   /* ─── TOOLS ─── */
   .tools-bg { background:var(--cream); }
-.price-grid {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  gap: 25px;
-}
+  .price-grid { display:flex; flex-direction:row; justify-content:space-evenly; gap:25px; }
   .tools-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
   .tool-card { background:white; border:1px solid var(--light); border-radius:14px; padding:30px 24px; transition:all .25s; position:relative; overflow:hidden; }
   .tool-card:hover { box-shadow:0 8px 32px var(--shadow); transform:translateY(-3px); border-color:transparent; }
@@ -283,10 +283,11 @@
     .price-box { padding:30px 24px; }
     footer { flex-direction:column; gap:18px; text-align:center; padding:30px 22px; }
     .footer-links { justify-content:center; }
+    .lang-switcher { top:auto; bottom:80px; right:16px; }
   }
-  @media(max-width:540px){ 
-    .tools-grid{grid-template-columns:1fr;} 
-    h1{font-size:2.2rem;} 
+  @media(max-width:540px){
+    .tools-grid{grid-template-columns:1fr;}
+    h1{font-size:2.2rem;}
     .hero-stats { flex-direction:column; gap:16px; }
     .stat-item:not(:last-child) { border-right:none; padding-right:0; margin-right:0; padding-bottom:16px; border-bottom:1px solid var(--light); margin-bottom:16px; }
     .btn-primary, .btn-ghost { width:100%; justify-content:center; }
@@ -301,21 +302,27 @@
   .float-iframe-wrapper iframe { display:block; }
   @media(max-width:540px){ .float-iframe-container{width:260px;bottom:10px;right:10px;} }
 </style>
+
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "Teny Anglisy - Guide PDF",
   "description": "Guide complet pour apprendre l'anglais avec l'IA. Programme de 90 jours avec ChatGPT, NotebookLM, Daily Dictation et 9 outils gratuits.",
+  "inLanguage": "fr",
+  "image": "https://tenyanglisy.pages.dev/cover.png",
   "brand": {
     "@type": "Brand",
     "name": "Teny Anglisy"
   },
+  "url": "https://tenyanglisy.pages.dev/",
   "offers": {
     "@type": "Offer",
-    "price": "12",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock"
+    "price": "15 000",
+    "priceCurrency": "MGA",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
   },
   "aggregateRating": {
     "@type": "AggregateRating",
@@ -324,40 +331,53 @@
   }
 }
 </script>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Course",
   "name": "Anglais avec l'IA - Programme 90 jours",
   "description": "Méthode complète pour apprendre l'anglais sans professeur avec des outils IA gratuits",
+  "inLanguage": "fr",
+  "image": "https://tenyanglisy.pages.dev/cover.png",
   "provider": {
     "@type": "Organization",
-    "name": "Teny Anglisy"
+    "name": "Teny Anglisy",
+    "url": "https://tenyanglisy.pages.dev"
   },
   "hasCourseInstance": {
     "@type": "CourseInstance",
     "courseMode": "online",
     "courseWorkload": "P90D"
-  }
+  },
+  "educationalLevel": "beginner",
+  "teaches": "Anglais niveau B1"
 }
 </script>
 </head>
 <body>
 
+<!-- LANGUAGE SWITCHER -->
+<div class="lang-switcher" role="navigation" aria-label="Sélection de langue">
+  <a href="/" class="lang-btn active" hreflang="fr" aria-current="page">🇫🇷 FR</a>
+  <a href="/en/" class="lang-btn" hreflang="en">🇬🇧 EN</a>
+  <a href="/mg/" class="lang-btn" hreflang="mg">🇲🇬 MG</a>
+</div>
+
 <!-- NAVBAR -->
 <nav role="navigation" aria-label="Navigation principale">
   <a href="#" class="nav-logo">
-    <img src="logo-ta.png" alt="Teny Anglisy" style="width:60px;height: auto;border-radius:9px; margin: 25px">
+    <img src="logo-ta.png" alt="Teny Anglisy — Apprendre l'Anglais avec l'IA" width="60" height="60" style="border-radius:9px; margin: 25px">
   </a>
   <div class="nav-right">
-    <div class="nav-toggle" onclick="document.querySelector('.nav-menu').classList.toggle('active')">
+    <div class="nav-toggle" onclick="document.querySelector('.nav-menu').classList.toggle('active')" aria-label="Menu">
       <span></span><span></span><span></span>
     </div>
     <div class="nav-menu">
       <a href="#modules" class="nav-link">Le guide</a>
       <a href="#programme" class="nav-link">Programme</a>
       <a href="#acheter" class="nav-link">Tarif</a>
-      <a href="https://tally.so/r/pbL8WP" class="nav-cta" target="_blank">Buy now→</a>
+      <a href="https://tally.so/r/pbL8WP" class="nav-cta" target="_blank" rel="noopener">Buy now→</a>
     </div>
   </div>
 </nav>
@@ -369,13 +389,12 @@
   <div class="hero-bg2"></div>
   <div class="hero-text">
     <div class="hero-badge">Guide PDF <span class="year"></span> · Méthode IA</div>
-    <h1>Maîtrisez l'Anglais<br>avec <em>l'IA</em> </h1>
-   <p class="hero-sub">Apprenez l’anglais en utilisant la technologie moderne — aucun professeur nécessaire. Planifiez votre apprentissage, choisissez les <strong>bons outils</strong>, utilisez les <strong>meilleures ressources,</strong> suivez vos progrès avec des <strong>applications puissantes</strong>, <strong>testez </strong> votre niveau et obtenez <strong>un certificat gratuit.</strong></p>
+    <h1>Maîtrisez l'Anglais<br>avec <em>l'IA</em></h1>
+    <p class="hero-sub">Apprenez l'anglais en utilisant la technologie moderne — aucun professeur nécessaire. Planifiez votre apprentissage, choisissez les <strong>bons outils</strong>, utilisez les <strong>meilleures ressources,</strong> suivez vos progrès avec des <strong>applications puissantes</strong>, <strong>testez</strong> votre niveau et obtenez <strong>un certificat gratuit.</strong></p>
     <div class="hero-actions">
-      <a href="https://tally.so/r/pbL8WP" class="btn-primary" target="_blank">Je veux le Guide PDF</a>
+      <a href="https://tally.so/r/pbL8WP" class="btn-primary" target="_blank" rel="noopener">Je veux le Guide PDF</a>
       <a href="#modules" class="btn-ghost">Voir le contenu <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
-     
     <div class="hero-stats">
       <div class="stat-item"><div class="stat-num">9<span>+</span></div><div class="stat-label">Modules</div></div>
       <div class="stat-item"><div class="stat-num">90<span>j</span></div><div class="stat-label">Programme</div></div>
@@ -384,49 +403,30 @@
   </div>
 
   <div class="hero-visual">
-    <img src="cover.png" alt="Teny Anglisy" style="width:320px;height:auto;border-radius:9px;">
-    <!-- <div class="book-mockup">
-      <div class="book-spine"></div>
-      <div class="book-content">
-        <img src="logo-ta.png" alt="Teny Anglisy" style="width:40px;height:auto;border-radius:7px;margin-bottom:14px;">
-        <div class="book-title">Apprendre<br>l'<span>Anglais</span><br>avec l'IA</div>
-        <div class="book-subtitle">Méthode complète · 90 jours</div>
-        <div class="book-divider"></div>
-        <ul class="book-modules">
-          <li>Grammar in Use + ChatGPT</li>
-          <li>ChatGPT Voice</li>
-          <li>NotebookLM</li>
-          <li>Daily Dictation</li>
-          <li>Notion Template</li>
-          <li>+ 5 outils gratuits</li>
-        </ul>
-        <div class="book-badge">Guide PDF</div>
-      </div>
-    </div> -->
+    <img src="cover.png" alt="Teny Anglisy - Guide PDF complet pour apprendre l'anglais avec l'IA en 90 jours" width="320" height="auto" style="border-radius:9px;">
     <div class="float-badge fb1"><strong>B1+</strong>Niveau atteint en 90j</div>
     <div class="float-badge fb2"><strong>45 min</strong>par jour suffit</div>
-    <div class="float-badge fb3" onclick="openVideoModal()" 
-style="cursor:pointer;background:linear-gradient(135deg,var(--red),#ff5a5e);color:white;border:none;display:flex;align-items:center;gap:6px;">
-  
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
-    <polygon points="5,3 19,12 5,21"/>
-  </svg>
-  
-  <span>Écoutez</span>
-
-</div>
+    <div class="float-badge fb3" onclick="openVideoModal()"
+      style="cursor:pointer;background:linear-gradient(135deg,var(--red),#ff5a5e);color:white;border:none;display:flex;align-items:center;gap:6px;"
+      aria-label="Regarder la vidéo">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+      <span>Écoutez</span>
+    </div>
   </div>
 </section>
 <div class="flag-stripe"></div>
+
+<!-- FACEBOOK WIDGET -->
 <div class="float-iframe-container" id="floatIframe">
   <div class="float-iframe-header">
     <span class="float-iframe-title">Teny Anglisy</span>
-    <button class="float-iframe-close" onclick="document.getElementById('floatIframe').style.display='none'">&times;</button>
+    <button class="float-iframe-close" onclick="document.getElementById('floatIframe').style.display='none'" aria-label="Fermer">&times;</button>
   </div>
   <div class="float-iframe-wrapper">
-    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid031zdPQ8L3DGvMixpvjJMSqB7ChVsjzb32XwYBoTaroYquVgAacSvwnujgSMvfKrfVl%26id%3D61581593063960&show_text=true&width=500" width="320" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid031zdPQ8L3DGvMixpvjJMSqB7ChVsjzb32XwYBoTaroYquVgAacSvwnujgSMvfKrfVl%26id%3D61581593063960&show_text=true&width=500" width="320" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" title="Post Facebook Teny Anglisy"></iframe>
   </div>
 </div>
+
 <!-- MODULES -->
 <div id="modules" class="tools-bg">
   <div class="sec"><div class="sec-inner">
@@ -434,12 +434,12 @@ style="cursor:pointer;background:linear-gradient(135deg,var(--red),#ff5a5e);colo
     <h2 class="sec-title">9 Modules pour<br><em>tout maîtriser</em></h2>
     <p class="sec-sub">Chaque module est actionnable immédiatement — prompts prêts à copier, plans semaine par semaine, techniques éprouvées.</p>
     <div class="tools-grid">
-      <div class="tool-card tc-blue"><i class="fa-solid fa-book fa-xl  "></i><div class="tool-name">Grammar</div><div class="tool-desc">Le livre de grammaire le plus vendu au monde, combiné à des prompts IA pour doubler la mémorisation.</div><div class="tool-tag">Module 1</div></div>
-      <div class="tool-card tc-blue"><i class="fa-solid fa-microphone fa-xl"></i><div class="tool-name">English conversation</div><div class="tool-desc">Parlez anglais sans blocage avec une IA qui ne juge pas et s'adapte à votre niveau en temps réel.</div><div class="tool-tag">Module 2</div></div>
-      <div class="tool-card tc-green"><i class="fa-solid fa-headphones fa-xl"></i><div class="tool-name">Podcast</div><div class="tool-desc">Créez vos propres podcasts en anglais à partir de vos documents. L'écoute active révolutionnée.</div><div class="tool-tag">Module 3</div></div>
-      <div class="tool-card tc-orange"><i class="fa-solid fa-pen fa-xl"></i><div class="tool-name">Dictation</div><div class="tool-desc">Maîtrisez l'écoute et l'écriture avec des dictées interactives basées sur l'anglais authentique.</div><div class="tool-tag">Module 4</div></div>
-      <div class="tool-card tc-purple"><i class="fa-solid fa-brain fa-xl"></i><div class="tool-name">9+ Modern Learning Tools in <span class="year"></span></div><div class="tool-desc">Techniques avancées d’apprentissage avec l’IA + 9 apps récentes — toutes gratuites, expliquées pas à pas.</div><div class="tool-tag">Modules 5–8</div></div>
-      <div class="tool-card tc-red"><i class="fa-solid fa-list fa-xl"></i><div class="tool-name">Dashboard</div><div class="tool-desc">Un tableau de bord complet pour organiser votre apprentissage, suivre vos progrès et rester motivé.</div><div class="tool-tag">Module 9</div></div>
+      <div class="tool-card tc-blue"><div class="tool-name">Grammar</div><div class="tool-desc">Le livre de grammaire le plus vendu au monde, combiné à des prompts IA pour doubler la mémorisation.</div><div class="tool-tag">Module 1</div></div>
+      <div class="tool-card tc-blue"><div class="tool-name">English conversation</div><div class="tool-desc">Parlez anglais sans blocage avec une IA qui ne juge pas et s'adapte à votre niveau en temps réel.</div><div class="tool-tag">Module 2</div></div>
+      <div class="tool-card tc-green"></i><div class="tool-name">Podcast</div><div class="tool-desc">Créez vos propres podcasts en anglais à partir de vos documents. L'écoute active révolutionnée.</div><div class="tool-tag">Module 3</div></div>
+      <div class="tool-card tc-orange"><div class="tool-name">Dictation</div><div class="tool-desc">Maîtrisez l'écoute et l'écriture avec des dictées interactives basées sur l'anglais authentique.</div><div class="tool-tag">Module 4</div></div>
+      <div class="tool-card tc-purple"><div class="tool-name">9+ Modern Learning Tools in <span class="year"></span></div><div class="tool-desc">Techniques avancées d'apprentissage avec l'IA + 9 apps récentes — toutes gratuites, expliquées pas à pas.</div><div class="tool-tag">Modules 5–8</div></div>
+      <div class="tool-card tc-red"><div class="tool-name">Dashboard</div><div class="tool-desc">Un tableau de bord complet pour organiser votre apprentissage, suivre vos progrès et rester motivé.</div><div class="tool-tag">Module 9</div></div>
     </div>
   </div></div>
 </div>
@@ -460,7 +460,7 @@ style="cursor:pointer;background:linear-gradient(135deg,var(--red),#ff5a5e);colo
           <li><span>📘</span>Grammar in Use — 1 unité/jour</li>
           <li><span>🧠</span>Anki — 20 nouveaux mots/jour</li>
           <li><span>✍️</span>Dictée — 10 exercices/jour</li>
-          <li><span>🎙️</span>Conversations avec l’IA — le weekend</li>
+          <li><span>🎙️</span>Conversations avec l'IA — le weekend</li>
         </ul>
         <div class="phase-result">→ ~500 mots actifs · Grammaire de base</div>
       </div>
@@ -473,7 +473,7 @@ style="cursor:pointer;background:linear-gradient(135deg,var(--red),#ff5a5e);colo
           <li><span>🎧</span>Podcasts personnalisés quotidiens</li>
           <li><span>🗣️</span>Application moderne de prononciation</li>
           <li><span>📻</span>BBC Learning English</li>
-          <li><span>💬</span>Conversations avec l’IA</li>
+          <li><span>💬</span>Conversations avec l'IA</li>
         </ul>
         <div class="phase-result">→ ~1200 mots · Conversations fluides</div>
       </div>
@@ -513,7 +513,7 @@ style="cursor:pointer;background:linear-gradient(135deg,var(--red),#ff5a5e);colo
       </div>
       <div class="proof-card">
         <div class="proof-stars">★★★★★</div>
-        <p class="proof-text">«L’app de dictée, combinée avec ChatGPT, a transformé ma compréhension orale. Après 30 jours, je comprenais les séries en VO sans sous-titres. »</p>
+        <p class="proof-text">« L'app de dictée, combinée avec ChatGPT, a transformé ma compréhension orale. Après 30 jours, je comprenais les séries en VO sans sous-titres. »</p>
         <div class="proof-author"><div class="proof-avatar pa3">TR</div><div><div class="proof-name">Yvan</div><div class="proof-loc"></div></div></div>
       </div>
     </div>
@@ -528,66 +528,47 @@ style="cursor:pointer;background:linear-gradient(135deg,var(--red),#ff5a5e);colo
     <p class="cta-sub">Un seul guide, une méthode complète, 9 outils gratuits expliqués pas à pas. Téléchargement immédiat après paiement.</p>
     <div class="price-grid">
       <div class="price-box">
-      <div class="price-top">
-        <div class="price-amount1">15 000 <sup>Ar</sup></div>
-        <div class="price-original">25 000 <sup>Ar</sup></div>
+        <div class="price-top">
+          <div class="price-amount1">15 000<sup>Ar</sup></div>
+          <div class="price-original">25 000 <sup>Ar</sup></div>
+        </div>
+        <div class="price-currency">Prix de lancement · Paiement unique · Accès à vie</div>
+        <ul class="price-includes">
+          <li>Guide PDF complet (20+ pages)</li>
+          <li>Programme 90 jours détaillé</li>
+          <li>Prompts ChatGPT prêts à copier</li>
+          <li>Template Notion inclus</li>
+          <li>Plan Grammar in Use 12 semaines</li>
+          <li>Toutes les mises à jour incluses</li>
+        </ul>
+        <a href="https://tally.so/r/pbL8WP" class="btn-cta-main" target="_blank" rel="noopener">Buy now →</a>
+        <div class="guarantee">🔒 Paiement sécurisé · Livraison instantanée par email</div>
       </div>
-      <div class="price-currency">Prix de lancement · Paiement unique · Accès à vie</div>
-      <ul class="price-includes">
-        <li>Guide PDF complet (20+ pages)</li>
-        <li>Programme 90 jours détaillé</li>
-        <li>Prompts ChatGPT prêts à copier</li>
-        <li>Template Notion inclus</li>
-        <li>Plan Grammar in Use 12 semaines</li>
-        <li>Toutes les mises à jour incluses</li>
-      </ul>
-      <a href="https://tally.so/r/pbL8WP" class="btn-cta-main" target="_blank">Buy now →</a>
-      <div class="guarantee" style=" text-align: center;">🔒 Paiement sécurisé · Livraison instantanée par email</div>
-    </div>
-    <!-- <div class="price-box">
-      <div class="price-top">
-        <div class="price-amount"><sup>$</sup>5</div>
-        <div class="price-original">$12</div>
-      </div>
-      <div class="price-currency">Prix de lancement · Paiement unique · Accès à vie</div>
-      <ul class="price-includes">
-        <li>Guide PDF complet (20+ pages)</li>
-        <li>Programme 90 jours détaillé</li>
-        <li>Prompts ChatGPT prêts à copier</li>
-        <li>Template Notion inclus</li>
-        <li>Plan Grammar in Use 12 semaines</li>
-        <li>Toutes les mises à jour incluses</li>
-      </ul>
-      <a href="https://tally.so/r/pbL8WP" class="btn-cta-main">Buy now →</a>
-      <div class="guarantee" style=" text-align: center;">🔒 Paiement sécurisé · Livraison instantanée par email</div>
-    </div> -->
     </div>
   </div>
-  
 </div>
 </main>
 
 <!-- FOOTER -->
 <footer role="contentinfo">
   <a href="#" class="footer-logo">
-    <img src="logo-ta.png" alt="Teny Anglisy" style="width:80px;height:auto;border-radius:9px;">
-    <!-- <div class="footer-brand">TENY <span>ANGLISY</span></div> -->
+    <img src="logo-ta.png" alt="Teny Anglisy" width="80" height="auto" style="border-radius:9px;">
   </a>
   <div class="footer-copy">© <span class="year"></span> Teny Anglisy · Tous droits réservés</div>
   <div class="footer-links">
     <a href="#">Contact</a>
     <a href="#">Confidentialité</a>
-    <a href="https://tally.so/r/pbL8WP">Acheter</a>
+    <a href="https://tally.so/r/pbL8WP" rel="noopener">Acheter</a>
   </div>
 </footer>
 
 <script>document.querySelectorAll('.year').forEach(el => el.textContent = new Date().getFullYear());</script>
 
 <!-- VIDEO MODAL -->
-<div class="video-modal" id="videoModal" onclick="if(event.target===this)closeVideoModal()">
+<div class="video-modal" id="videoModal" onclick="if(event.target===this)closeVideoModal()" role="dialog" aria-label="Vidéo de présentation">
   <div class="video-modal-content">
-    <button class="video-modal-close" onclick="closeVideoModal()">&times;</button>
-    <iframe id="videoFrame" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <button class="video-modal-close" onclick="closeVideoModal()" aria-label="Fermer la vidéo">&times;</button>
+    <iframe id="videoFrame" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" title="Présentation Teny Anglisy"></iframe>
   </div>
 </div>
 

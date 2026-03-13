@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap multilingue
+Sitemap: https://tenyanglisy.pages.dev/sitemap.xml
+
+# Crawl-delay pour les bots non prioritaires
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
